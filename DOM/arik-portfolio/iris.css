@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+head, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #dac5a7;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.view-1 img {
+  padding-top: 3.45rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 32.9%;
+  aspect-ratio: 1.95/2.37;
+}
+.view-1 .jj {
+  font-size: 8.23rem;
+  font-weight: lighter;
+  font-display: block;
+}
+.view-1 .jj br {
+  display: none;
+}
+.view-1 .kk {
+  font-size: 7.5rem;
+  font-weight: 100;
+  line-height: 5px;
+}
+.view-1 .yt {
+  font-size: 1.45rem;
+  padding-top: 2rem;
+  font-weight: 100;
+  opacity: 0.6;
+}
+.view-1 .yt #hh {
+  display: none;
+}
+
+.jr {
+  gap: 1rem;
+  padding-top: 2rem;
+  height: 1rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.jr #kr {
+  padding-top: 0.9rem;
+}
+.jr video {
+  border-radius: 100%;
+  padding-top: 0.5rem;
+}
+
+.view-2 {
+  padding-left: 50%;
+  padding-top: 6rem;
+  transform: translateX(-25%);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.view-2 .marquee {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 4rem;
+}
+.view-2 .marquee::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0e0e0e, transparent, transparent, transparent, #0e0e0e);
+}
+.view-2 .text {
+  display: flex;
+  gap: 4rem;
+  padding: 0.7rem;
+  animation: dodo 6s linear infinite both;
+}
+
+@keyframes dodo {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-114.6%);
+  }
+}
+@media (max-width: 1020px) {
+  .view-1 {
+    width: 100%;
+    align-items: center;
+  }
+  .view-1 img {
+    width: 62%;
+    padding-top: 3rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .view-1 .jj {
+    line-height: 4.3rem;
+    font-size: 4.15rem;
+    text-align: center;
+  }
+  .view-1 .kk {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 2.3rem;
+  }
+  .view-1 #rr {
+    display: none;
+  }
+  .view-1 #yr {
+    display: none;
+  }
+  .view-1 .yt {
+    font-size: 1.31rem;
+    opacity: 100;
+    font-weight: 400;
+    color: #c2af95;
+    text-align: center;
+    line-height: 1.6rem;
+  }
+  .view-1 .yt #hh {
+    display: block;
+  }
+  .view-1 .jr {
+    padding-right: 4rem;
+  }
+  .view-2 {
+    width: 100%;
+  }
+  .view-2 .marquee {
+    overflow: hidden;
+  }
+  .view-2 .marquee::after {
+    display: none;
+  }
+}/*# sourceMappingURL=iris.css.map */
