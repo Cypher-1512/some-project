@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: azure;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+
+
+}
+#box{
+    height: 250px;
+    width: 250px;
+    border: solid 2px white;
+    text-align: center;
+    background-color: rgb(235, 232, 232);
+    border-radius: 20px;
+    
+
+}
+h1{
+    padding-top:50%;
+    transform: translateY(-25%);
+    color:black;
+}
+button{
+    padding: 25px;
+    border-radius: 5px;
+    font-size: large;
+    background-color: aqua;
+}
+button:active{
+    scale:0.85;
+}
+
+html{
+    color:sky
+}
